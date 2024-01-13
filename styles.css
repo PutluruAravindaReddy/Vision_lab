@@ -220,6 +220,15 @@ body {
         margin: 10px 0;
     }
 
+    #rs-box:hover {
+        min-width: 293px;
+        max-width: 423px;
+        width: 99.3%;
+        border: 1.5px solid rgb(53, 45, 45);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+        z-index: 888;
+    }
+
     #rs-box img {
         width: 96.5%;
         border-radius: 25px;
