@@ -1,11 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}    
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
 #faculty{
     margin: 0 4%;
 }
 
 .faculties{
     display: flex;
+    margin-bottom: 30px;
 }
 
 .faculty-image{
     margin-right: 15px;
+}
+
+.faculty-image img{
+    border-radius: 10px;
+}
+
+.faculty-description{
+    align-self: center;
+    width: 100%;
+}
+
+.faculty-description h4{
+    padding: 7px 0;
+}
+
+.faculty-description p{
+    padding: 3px 0;
+}
+
+.faculty-description a{
+    text-decoration: none;
+    margin: 300px 0;
+}
+
+.faculty-description strong{
+    margin-right: 5px;
 }
