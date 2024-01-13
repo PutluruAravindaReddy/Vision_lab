@@ -1,0 +1,11 @@
+#faculty{
+    margin: 0 4%;
+}
+
+.faculties{
+    display: flex;
+}
+
+.faculty-image{
+    margin-right: 15px;
+}
