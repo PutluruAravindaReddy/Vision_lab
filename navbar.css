@@ -104,7 +104,7 @@ nav ul li a {
 }
 
 .navbar2 ul {
-    background-color: white;
+    background-color: #E3E6F3;
 }
 
 .greenandwhite {
@@ -290,10 +290,10 @@ nav ul li a {
     }
 
     .active ul li {
-        border: none;
+        border-radius: 30px;
         display: block;
-        margin: 2px 0;
-        padding: 10px 0;
+        padding: 14px 0;
+        margin: 0;
         width: 100%;
         border: none;
     }
