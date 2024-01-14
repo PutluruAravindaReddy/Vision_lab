@@ -5,13 +5,19 @@
 
 body {
     font-family: "Roboto", sans-serif;
+    transition: 0.1s ease ;
 }
 
-#faculty{
+body hr{
+    margin: 0 10%;
+}
+
+#faculty-sec{
     margin: 0 4%;
 }
 
 .faculties{
+    
     display: flex;
     margin-bottom: 30px;
 }
@@ -21,8 +27,14 @@ body {
 }
 
 .faculty-image img{
+    cursor: pointer;
     border-radius: 10px;
 }
+
+.faculty-image:hover{
+transform: scale(1.1);
+}
+
 
 .faculty-description{
     align-self: center;
@@ -44,4 +56,95 @@ body {
 
 .faculty-description strong{
     margin-right: 5px;
+}
+
+#members-sec{
+    margin:0 4%;
+}
+
+#members-sec h2{
+    padding: 0 0 30px 20px;
+}
+
+
+#members-sec #members-div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.members{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid black; */
+    padding: 10px;
+    margin:0 10% 4% 0;
+    
+    width: 37%;
+    min-width: 330px;
+    max-width: 500px;
+    height: 100px;
+}
+
+.members-image{
+    border-radius: 50%;
+    background-color: white;
+    width: 90px;
+    height: 90px;
+    padding: 3px 20px 0 3px;
+}
+
+.members-image img{
+    border-radius: 50%;
+    width: 86px;
+    height: 86px;
+}
+
+.members-description a{
+    text-decoration: none;
+    color: #2a7ae2;;
+}
+
+.members-description p{
+    padding: 1px 0;
+}
+
+#students-sec{
+    margin: 0 4%;
+}
+
+/* #students-div{
+
+} */
+
+.students{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    margin: 7px 0 0 0 ;
+    cursor: pointer;
+}
+
+.colorbox{
+    background-color: #DDD;
+}
+.students:hover{
+    background-color: aliceblue;
+}
+
+.students *{
+    margin: 0 4% 0 0;
+}
+
+.students .empty{
+    width: 10px;
+    height: 40px;
+    margin: 0 2% 0 0;
+}
+
+.students a{
+    text-decoration: none;
+    color: #2a7ae2;
 }
