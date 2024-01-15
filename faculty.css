@@ -148,3 +148,7 @@ transform: scale(1.1);
     text-decoration: none;
     color: #2a7ae2;
 }
+
+@media (max-width:440px){
+    
+}
