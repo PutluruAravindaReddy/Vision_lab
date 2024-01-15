@@ -115,16 +115,23 @@ transform: scale(1.1);
     margin: 0 4%;
 }
 
-/* #students-div{
-
-} */
 
 .students{
-    width: 70%;
     display: flex;
     align-items: center;
+    width: 70%;
     margin: 7px 0 0 0 ;
     cursor: pointer;
+}
+
+.students .students-content{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.students-content *{
+    margin: 0 4% 0 0;
 }
 
 .colorbox{
@@ -134,9 +141,6 @@ transform: scale(1.1);
     background-color: aliceblue;
 }
 
-.students *{
-    margin: 0 4% 0 0;
-}
 
 .students .empty{
     width: 10px;
@@ -177,13 +181,19 @@ transform: scale(1.1);
     }
     
     
-    .students{
+    .students .students-content{
         display: block;
     }
-    
-    .students *{
+
+    .students{
         margin: 4% 0 0 0;
     }
     
+    .students .students-content *{
+        margin: 4% 0 0 0;
+    }
     
+    .students .empty{
+        height: 80px;
+    }
 }
