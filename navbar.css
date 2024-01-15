@@ -288,6 +288,7 @@ nav ul li a {
 }
 
 @media screen and (max-width: 440px) {
+
     .sidebar i {
         font-size: 30px;
         padding-right: 20px;
@@ -303,9 +304,20 @@ nav ul li a {
 
     }
 
-    #hero {
-        margin-top: -80px;
+    #bg::before{
+        background: url(./img/srm-auditorium_crop_full.jpg) center/cover;
+        height: 100vh;
     }
+
+    #intro{
+        margin: 70px 0 0 0;
+    }
+
+    #hero {
+        padding-top: 20px;
+    }
+
+
 
     .visual {
         text-align: center;
