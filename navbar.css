@@ -336,18 +336,25 @@ nav ul li a {
         color: white;
     }
 
+/* { Footer } */
+
 
     #footer {
         display: flex;
         flex-direction: column;
         padding: 40px 6%;
-        align-self: flex-start;
+        justify-content: center;
+        /* align-items: center; */
+        margin: 0;
     }
 
     #footer-one{
         padding-left: 10px;
     }
 
+    #footer-two{
+        align-self: center;
+    }
 
     #footer-two iframe{
         /* max-width: 410px */
@@ -375,7 +382,7 @@ nav ul li a {
     }
 
     #footer-three .page-links a{
-        margin-right: 6px;
+        margin-right: 8px;
         font-size: 0.9rem;
     }
 
