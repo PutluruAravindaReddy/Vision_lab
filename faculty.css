@@ -17,7 +17,6 @@ body hr{
 }
 
 .faculties{
-    
     display: flex;
     margin-bottom: 30px;
 }
@@ -81,7 +80,6 @@ transform: scale(1.1);
     /* border: 1px solid black; */
     padding: 10px;
     margin:0 10% 4% 0;
-    
     width: 37%;
     min-width: 330px;
     max-width: 500px;
@@ -110,6 +108,8 @@ transform: scale(1.1);
 .members-description p{
     padding: 1px 0;
 }
+
+/* { Students Section } */
 
 #students-sec{
     margin: 0 4%;
@@ -150,5 +150,40 @@ transform: scale(1.1);
 }
 
 @media (max-width:440px){
+    .faculties{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    
+    .faculty-image{
+        margin-right: 0;
+    }
+    
+    .faculty-image:hover{
+    transform: scale(1.02);
+    }
+    
+    .faculty-description{
+        margin: 0 0 0 10px;
+    }
+
+    #members-sec{
+        margin:0 0;
+    }
+    
+    #students-sec{
+        margin: 0 0 0 3%;
+    }
+    
+    
+    .students{
+        display: block;
+    }
+    
+    .students *{
+        margin: 4% 0 0 0;
+    }
+    
     
 }

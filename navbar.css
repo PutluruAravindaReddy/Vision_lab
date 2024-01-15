@@ -305,15 +305,9 @@ nav ul li a {
     }
 
     #bg::before{
-        background: url(./img/srm-auditorium_crop_full.jpg) center/cover;
+        background: url(./img/srm-auditorium_crop_half.jpg) center/cover;
         height: 100vh;
     }
-
-    #intro{
-        margin: 70px 0 0 0;
-    }
-
-
 
     .visual {
         text-align: center;
