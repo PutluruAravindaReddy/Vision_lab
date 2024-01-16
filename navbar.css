@@ -290,7 +290,7 @@ nav ul li a {
 @media screen and (max-width: 440px) {
     #bg::before{
         background: url(./img/srm-auditorium_crop_half.jpg) center/cover;
-        height: calc(95vh);
+        height: calc(96vh);
     }
 
     .sidebar i {
