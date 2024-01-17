@@ -16,6 +16,10 @@ body {
     margin: 0 4%;
 }
 
+.outer-hr{
+    margin: 0 10%;
+}
+
 .faculties{
     display: flex;
     margin-bottom: 30px;
@@ -24,7 +28,7 @@ body {
 .faculties:hover{
     z-index: 900;
     /* border: 1px solid rgb(53, 45, 45); */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
 }
 
 .faculty-image{
