@@ -21,6 +21,12 @@ body {
     margin-bottom: 30px;
 }
 
+.faculties:hover{
+    z-index: 900;
+    /* border: 1px solid rgb(53, 45, 45); */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
 .faculty-image{
     margin-right: 15px;
 }
