@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,11 +15,14 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato&family=Monoton&family=Poppins:wght@400;500&family=Roboto&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato&family=Monoton&family=Poppins:wght@400;500&family=Roboto&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="./navbar.css">
     <link rel="stylesheet" href="researchprojects.css">
 </head>
+
 <body>
     <div id="bg">
         <header id="headerbg">
@@ -56,40 +60,161 @@
         </section>
     </div>
 
-    <section>
-        <div class="slideshow-container">
 
-            <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
-              <img src="./img/features/computer-vision.jpeg" style="width:100%" alt="s">
-              <div class="text">Caption Text</div>
+    <section id="projects_sec">
+        <h1 class=>Human detection in synergy with OSCC detection</h1>
+        <div id="projects">
+            <div id="slideshow">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="./img/features/computer-vision.jpeg" style="width:100%" alt="s">
+                        <div class="text">Caption Text</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="./img/features/image-video.jpg" style="width:100%" alt="s">
+                        <div class="text">Caption Two</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="./img/features/cross-platfrom.jpeg" style="width:100%" alt="s">
+                        <div class="text">Caption Three</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
             </div>
-            
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
-              <img src="./img/features/image-video.jpg" style="width:100%" alt="s">
-              <div class="text">Caption Two</div>
+            <div class="project_div">
+                <p><strong>Hardware used : </strong>Microscope and Mi 360° Camera, Oculus Quest 2</p>
+                <p><strong>Software used : </strong>Python, Flask </p>
+                <p><strong>Problem statement : </strong>creating a synergy of OSCC detection and Human detection using an NLP. </p>
+                <p>Pose estimation is a computer vision technique that classifies the different body parts and joints of
+                    a human body and tracks their movement. This is achieved by assigning different key-points or
+                    ‘landmarks’ to the parts and joints of the body, and thus continuously tracking their real-time
+                    location through images or video feed while providing the user with the coordinates of those
+                    landmarks.
+                    This project made use of Raspberry Pi, more about which will be explained later. The project was
+                    made in Python coding language, and the OpenCV and MediaPipe libraries act as the most important
+                    parts. The Raspberry Pi camera module was used to get live video input and various other
+                    pre-recorded videos were also used to test the project out.
+                </p>
             </div>
-            
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
-              <img src="./img/features/cross-platfrom.jpeg" style="width:100%" alt="s">
-              <div class="text">Caption Three</div>
+        </div>
+        <div id="projects">
+            <div id="slideshow">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="./img/features/computer-vision.jpeg" style="width:100%" alt="s">
+                        <div class="text">Caption Text</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="./img/features/image-video.jpg" style="width:100%" alt="s">
+                        <div class="text">Caption Two</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="./img/features/cross-platfrom.jpeg" style="width:100%" alt="s">
+                        <div class="text">Caption Three</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
             </div>
-            
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-            
+            <div class="project_div">
+                <p><strong>Hardware used : </strong>Microscope and Mi 360° Camera, Oculus Quest 2</p>
+                <p><strong>Software used : </strong>Python, Flask </p>
+                <p><strong>Problem statement : </strong>creating a synergy of OSCC detection and Human detection using an NLP. </p>
+                <p>Pose estimation is a computer vision technique that classifies the different body parts and joints of
+                    a human body and tracks their movement. This is achieved by assigning different key-points or
+                    ‘landmarks’ to the parts and joints of the body, and thus continuously tracking their real-time
+                    location through images or video feed while providing the user with the coordinates of those
+                    landmarks.
+                    This project made use of Raspberry Pi, more about which will be explained later. The project was
+                    made in Python coding language, and the OpenCV and MediaPipe libraries act as the most important
+                    parts. The Raspberry Pi camera module was used to get live video input and various other
+                    pre-recorded videos were also used to test the project out.
+                </p>
             </div>
-            <br>
-            
-            <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(1)"></span> 
-              <span class="dot" onclick="currentSlide(2)"></span> 
-              <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        <div id="projects">
+            <div id="slideshow">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="./img/features/computer-vision.jpeg" style="width:100%" alt="s">
+                        <div class="text">Caption Text</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="./img/features/image-video.jpg" style="width:100%" alt="s">
+                        <div class="text">Caption Two</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="./img/features/cross-platfrom.jpeg" style="width:100%" alt="s">
+                        <div class="text">Caption Three</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
             </div>
+            <div class="project_div">
+                <p><strong>Hardware used : </strong>Microscope and Mi 360° Camera, Oculus Quest 2</p>
+                <p><strong>Software used : </strong>Python, Flask </p>
+                <p><strong>Problem statement : </strong>creating a synergy of OSCC detection and Human detection using an NLP. </p>
+                <p>Pose estimation is a computer vision technique that classifies the different body parts and joints of
+                    a human body and tracks their movement. This is achieved by assigning different key-points or
+                    ‘landmarks’ to the parts and joints of the body, and thus continuously tracking their real-time
+                    location through images or video feed while providing the user with the coordinates of those
+                    landmarks.
+                    This project made use of Raspberry Pi, more about which will be explained later. The project was
+                    made in Python coding language, and the OpenCV and MediaPipe libraries act as the most important
+                    parts. The Raspberry Pi camera module was used to get live video input and various other
+                    pre-recorded videos were also used to test the project out.
+                </p>
+            </div>
+        </div>
     </section>
-    
+
     <section id="footer" class="section-p1">
         <div id="footer-one">
             <div id="footer-image">
@@ -132,4 +257,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
