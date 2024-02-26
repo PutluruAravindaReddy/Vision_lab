@@ -77,6 +77,61 @@ nav ul li a {
     /* font-size: 15px; */
 }
 
+.dd-box{
+    height: 35px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.dd-box p{
+    cursor:pointer;
+    margin-right: 4px;
+}
+
+.dd-menu{
+    height: 34px;
+    position: absolute;
+    top: 55px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.active-dd{
+    padding:0 15px;
+    border-radius: 30px;
+    background-color: #078178;
+    /* background-color: white; */
+    color: white;
+    transition: 0.3s;
+}
+
+.active-white{
+    background-color: white;
+    color: #078178;
+}
+
+.dd-menu a{
+    cursor:pointer;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 4px;
+}
+
+.dd-hide{
+    display: none;
+}
+
+.dd-green a{
+    background-color:#4f8d89;
+}
+
+.dd-white{
+    background-color: #E3E6F3;
+}
+
 .active {
     padding: 10px 20px;
     background-color: #078178;
@@ -126,6 +181,16 @@ nav ul li a {
 
 .sidebar{
     cursor: pointer;
+}
+
+.vc-css-border{
+    padding: 0 15px;
+    border-radius: 30px;
+    color: white;
+}
+
+.vc-css-color{
+    color: #078178;
 }
 
 
@@ -239,13 +304,14 @@ nav ul li a {
 
 #copy-right {
     background-color: #E3E6F3;
-    padding: 0 0 40px 0;
+    padding: 40px 0 0 0;
     text-align: center;
 }
 
 #copy-right p {
     padding: 0 0 35px 0;
 }
+
 
 /* Additional styles for smaller screens */
 @media screen and (max-width: 800px) and (min-width:441px) {
