@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.mySlides {
+    display: none;
+}
+img {vertical-align: middle;}
+
+#projects_sec{
+  padding: 40px 6%;
+}
+
+#projects_sec h1{
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+#projects{
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+  margin: 2px 20px;
+}
+
+.carousel-wrapper * {
+  box-sizing: border-box;
+}
+
+.carousel {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.carousel__photo {
+  opacity: 0;
+  position: absolute;
+  top:0;
+  width: 100%;
+  border-radius: 25px;
+  margin: auto;
+  /* padding: 1rem 4rem; */
+  z-index: 100;
+  transition: transform .5s, opacity .5s, z-index .5s;
+}
+
+
+.carousel__photo.initial,
+.carousel__photo.active-slide {
+  opacity: 1;
+  position: relative;
+  z-index: 900;
+}
+
+.carousel__photo.prev,
+.carousel__photo.next {
+  z-index: 800;
+}
+
+.carousel__photo.prev {
+  transform: translateX(-100%);
+}
+
+.carousel__photo.next {
+  transform: translateX(100%);
+}
+
+.carousel__button--prev,
+.carousel__button--next {
+  position: absolute;
+  top:50%;
+  width: 2.7rem;
+  height: 2.7rem;
+  background-color: #FFF;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  cursor: pointer; 
+  z-index: 1001; 
+  border:1px solid black;
+/*  opacity: 0;  Hide buttons until carousel is initialised 
+  transition:opacity 1s;*/
+}
+
+.carousel__button--prev {
+  left:0;
+}
+
+.carousel__button--next {
+  right:0;
+}
+
+.carousel__button--prev::after,
+.carousel__button--next::after {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 54%;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.carousel__button--next::after {
+  left: 47%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+
+.project_div{
+  margin: 2px 20px;
+  width: 100%;
+}
+
+.project_div *{
+  text-align: justify;
+  margin-top:10px ;
+}

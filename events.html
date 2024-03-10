@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/srm_logo_round.png" type="image/png">
-    <title>Home | Computer Vision Vertical - SRMIST</title>
-    <meta property="og:title" content="Home | Computer Vision Vertical - SRMIST">
-    <meta property="og:description" content="Computer vision Vertical website at SRMIST">
+    <title>Gallery | Computer Vision Vertical - SRMIST </title>
+    <meta property="og:title" content="Gallery | Computer Vision Vertical - SRMIST">
+    <meta property="og:description" content="Computer vision Vertical website SRMIST">
     <meta property="og:image" content="./img/srm_logo_round.png" type="image/png">
     <meta property="og:url" content="https://putluruaravindareddy.github.io/Vision_lab/">
     <meta name="og:site_name" content="Vision_lab">
@@ -15,33 +14,31 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato&family=Monoton&family=Poppins:wght@400;500&family=Roboto&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="vcposters.css">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato&family=Monoton&family=Poppins:wght@400;500&family=Roboto&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="events.css">
+</head>
 <body>
     <div id="bg">
         <header id="headerbg">
             <img src="./img/srm_logo.svg" alt="" class="srm_logo" height="40">
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li > <a href="index.html">Home</a> </li>
+                    <li> <a href="index.html">Home</a> </li>
                     <li> <a href="faculty.html">Faculty</a> </li>
                     <li> <a href="publications.html">Publications</a> </li>
-                    <li> <a href="researchprojects.html">Research Projects</a> </li>
+                    <li class="active"> <a href="events.html">Events</a> </li>
                     <li> <a href="gallery.html">Gallery</a> </li>
                     <li>
-                        <div class="dd-box active vc-css-border">
+                        <div class="dd-box">
                             <p>VC Lab</p>
                             <img src="./img/dropdown_arrow.webp" width="18px" height="15px" alt="drop-down arrow">
                         </div>
-                        <div class="dd-hide dd-menu ">
+                        <div class="dd-hide dd-menu">
                             <a href="vcmembers.html">Members</a>
                             <a href="vcrc.html">VCRC</a>
-                            <a href="vcresearch.html">Research</a>
+                            <a href="vcprojects.html">Research</a>
                             <a href="vcpublications.html">Publications</a>
                             <a href="events.html">Events</a>
                         </div>
@@ -57,7 +54,7 @@
                 <li class="active"> <a href="index.html">Home</a> </li>
                 <li> <a href="faculty.html">Faculty</a> </li>
                 <li> <a href="publications.html">Publications</a> </li>
-                <li> <a href="events.html">Events</a> </li>
+                <li> <a href="researchprojects.html">Research Projects</a> </li>
                 <li> <a href="gallery.html">Gallery</a> </li>
                 <li>
                     <div class="dd-box">
@@ -65,11 +62,9 @@
                         <img src="./img/dropdown_arrow.webp" width="18px" alt="drop-down arrow">
                     </div>
                     <div class="dd-hide dd-menu">
-                        <a href="vcmembers.html">Members</a>
-                        <a href="vcrc.html">VCRC</a>
-                        <a href="vcprojects.html">Projects</a>
-                        <a href="vcpublications.html">Publications</a>
-                        <a href="events.html">Events</a>
+                        <a href="">Members</a>
+                        <a href="">Research</a>
+                        <a href="">Publications</a>
                     </div>
                 </li>
             </ul>
@@ -83,26 +78,8 @@
         </section>
     </div>
 
-    <section id="posters-sec">
-        <h2>Posters</h2>
-        <div id="posters-container">
-            <!-- Replace the image URLs with your actual poster URLs -->
-            <div class="poster" onclick="enlargePoster('./img/vclab/posters/weather_project.png')">
-                <img src="./img/vclab/posters/weather_project.png" alt="Poster 1">
-            </div>
-            <div class="poster" onclick="enlargePoster('./img/vclab/posters/Youtube_Screenshot.png')">
-                <img src="./img/vclab/posters/Youtube_Screenshot.png" alt="Poster 2">
-            </div>
-            <!-- Add more poster divs as needed -->
-        </div>
-
-        <div id="enlarged-poster">
-            <img id="enlarged-image" src="" alt="Enlarged Poster" width="100%" height="100%">
-        </div>
-
-        <div id="close-btn" onclick="closeEnlargedPoster()">×</div>
-    </section>
-
+    
+    
     <section id="footer" class="section-p1">
         <div id="footer-one">
             <div id="footer-image">
@@ -143,8 +120,6 @@
         <p>SRM ©2023 - SRM Institute of Science and Technology | All Rights Reserved</p>
     </div>
 
-
     <script src="script.js"></script>
 </body>
-
 </html>

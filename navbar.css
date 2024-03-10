@@ -54,6 +54,12 @@ header img {
     padding: 20px 0;
 }
 
+/* .transparent-bg-nav{
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 50%),
+    linear-gradient(to left, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 50%);
+} */
+
+
 nav ul {
     display: flex;
     justify-content: end;
@@ -165,6 +171,7 @@ nav ul li a {
     background-color: #E3E6F3;
 }
 
+
 .greenandwhite {
     background-color: white;
 }
@@ -177,6 +184,7 @@ nav ul li a {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
     z-index: 999;
     background-color: #4f8d89;
+    
 }
 
 .sidebar{

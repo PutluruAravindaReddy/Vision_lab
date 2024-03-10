@@ -23,11 +23,13 @@ body {
 .faculties{
     display: flex;
     margin-bottom: 30px;
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .faculties:hover{
     z-index: 900;
     /* border: 1px solid rgb(53, 45, 45); */
+    transition: color 0.3s ease-in-out;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
 }
 
@@ -42,6 +44,7 @@ body {
 
 .faculty-image:hover{
 transform: scale(1.1);
+transition: color 0.3s ease-in-out;
 }
 
 
@@ -121,47 +124,6 @@ transform: scale(1.1);
 
 /* { Students Section } */
 
-#students-sec{
-    margin: 0 4%;
-}
-
-
-.students{
-    display: flex;
-    align-items: center;
-    width: 70%;
-    margin: 7px 0 0 0 ;
-    cursor: pointer;
-}
-
-.students .students-content{
-    display: flex;
-    width: 100%;
-    align-items: center;
-}
-
-.students-content *{
-    margin: 0 4% 0 0;
-}
-
-.colorbox{
-    background-color: #DDD;
-}
-.students:hover{
-    background-color: aliceblue;
-}
-
-
-.students .empty{
-    width: 10px;
-    height: 40px;
-    margin: 0 2% 0 0;
-}
-
-.students a{
-    text-decoration: none;
-    color: #2a7ae2;
-}
 
 @media (max-width:440px){
     .faculties{
