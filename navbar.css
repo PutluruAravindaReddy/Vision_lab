@@ -13,7 +13,7 @@ body {
 
 #bg::before {
     content: "";
-    background: url(./img/srm-auditorium.jpg) center/cover;
+    background: url(./img/tech-park.jpeg) center/cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -110,7 +110,7 @@ nav ul li a {
     border-radius: 30px;
     background-color: #078178;
     /* background-color: white; */
-    color: white;
+    /* color: white; */
     transition: 0.3s;
 }
 
@@ -194,7 +194,7 @@ nav ul li a {
 .vc-css-border{
     padding: 0 15px;
     border-radius: 30px;
-    color: white;
+    /* color: white; */
 }
 
 .vc-css-color{
@@ -214,16 +214,18 @@ nav ul li a {
 
 #hero h1 {
     font-family: 'Lato', Arial, Helvetica, sans-serif;
-    padding-top: 120px;
-    font-size: 90px;
-
-    color: #17948c;
+    padding-top: 240px;
+    font-size: 100px;
+    color: rgba(0, 0, 0, 0.808);
+    /* color: #17948c; */
     z-index: 999;
 }
 
 #hero h2 {
     /* font-family: 'Lato',Arial, Helvetica, sans-serif; */
-    color: black;
+    /* color: black; */
+    /* color: #DFF5FF; */
+    color: #EEEEEE;
     font-size: 45px;
     z-index: 999;
 }

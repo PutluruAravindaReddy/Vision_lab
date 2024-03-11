@@ -36,21 +36,15 @@ body {
     z-index: -1;
 }
 
-#hero h1 {
+/* #hero h1 {
     font-family: 'Lato', Arial, Helvetica, sans-serif;
     padding-top: 120px;
     font-size: 90px;
 
     color: #17948c;
     z-index: 999;
-}
+} */
 
-#hero h2 {
-    /* font-family: 'Lato',Arial, Helvetica, sans-serif; */
-    color: black;
-    font-size: 45px;
-    z-index: 999;
-}
 
 #intro {
     margin-top: 50px;

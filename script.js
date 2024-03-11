@@ -51,20 +51,22 @@ function scrollFunction() {
     document.querySelector(".active").classList.add("greenandwhite");
     document.querySelector(".dd-menu").classList.add("dd-green");
     // document.querySelector("header").classList.add("transparent-bg-nav");
-    // document.querySelector('.vc-css-border').classList.add("vc-css-color");
+    document.querySelector('.vc-css-border').classList.add("vc-css-color-white");
   }
   else  if (document.body.scrollTop < 20 || document.documentElement.scrollTop < 20) {
     document.getElementById("headerbg").classList.remove("scroll");
     document.querySelector(".active").classList.remove("greenandwhite");
     document.querySelector(".dd-menu").classList.remove("dd-green");
     // document.querySelector("header").classList.remove("transparent-bg-nav");
-    // document.querySelector('.vc-css-border').classList.remove("vc-css-color");
+    document.querySelector('.vc-css-border').classList.remove("vc-css-color-white");
+
 
   } else {
     document.getElementById("headerbg").classList.remove("scroll");
     document.querySelector(".active").classList.remove("greenandwhite");
     document.querySelector(".dd-menu").classList.remove("dd-green");
     // document.querySelector("header").classList.remove("transparent-bg-nav");
+    document.querySelector('.vc-css-border').classList.remove("vc-css-color-white");
   }
 }
 
@@ -113,6 +115,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // { faculty js }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const membersDiv = document.getElementById('members-div');
+    const members = Array.from(document.querySelectorAll('.members'));
+
+    // Define the order of designations
+    const order = ["Professor", "Associate Professor", "Assistant Professor"];
+
+    // Sort the members based on the predefined order
+    members.sort(function(a, b) {
+        const designationA = a.querySelector('p:nth-of-type(1)').textContent.trim();
+        const designationB = b.querySelector('p:nth-of-type(1)').textContent.trim();
+        return order.indexOf(designationA) - order.indexOf(designationB);
+    });
+
+    // Append the sorted members back to the membersDiv
+    members.forEach(function(member) {
+        membersDiv.appendChild(member);
+    });
+});
+
+
 
 let empty=document.querySelectorAll(".empty");
 let students=document.querySelectorAll(".students");

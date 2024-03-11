@@ -8,83 +8,94 @@ body {
     transition: 0.1s ease ;
 }
 
-.vc-fa-sec{
-    padding: 40px 10%;
+.vc-fa-sec {
+  padding: 40px 10%;
 }
 
-.vc-fa-sec h2{
-    margin-left: 40px;
+.vc-fa-sec h2 {
+  margin-left: 40px;
+  font-size: 2rem;
+}
+
+.project-title {
+  margin-bottom: 10px;
 }
 
 .faculty-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 330px;
-    margin: 40px;
-    padding-top: 10px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 330px;
+  margin: 40px;
+  padding-top: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out; /* Added transition property */
+}
 
-  .faculty-header {
-    background-color: #007BFF;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-  }
+.faculty-card:hover {
+  transform: scale(1.05); /* Scale up the card on hover */
+}
 
-  .faculty-image {
-    /* width: 200px;
+.faculty-header {
+  background-color: #007BFF;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.faculty-image {
+  /* width: 200px;
     height: 200px; */
-    object-fit: cover;
-  }
+  object-fit: cover;
+}
 
+.faculty-details {
+  padding: 10px 15px;
+}
 
-  .faculty-details {
+.faculty-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 
-    padding: 10px 15px;
-  }
+.faculty-title {
+  color: #555;
+  margin-bottom: 15px;
+}
 
-  .faculty-name {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
+.contact-info {
+  margin-top: 15px;
+}
 
-  .faculty-title {
-    color: #555;
-    margin-bottom: 15px;
-  }
+.contact-info * {
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
 
-  .contact-info {
-    margin-top: 15px;
-  }
-  .contact-info *{
-    line-height: 1.3; 
-    margin-bottom: 8px;
-  }
+.bio {
+  margin-top: 15px;
+}
 
-  .bio {
-    margin-top: 15px;
-  }
-
-.vc-faculty{
-display: flex;
+.vc-faculty {
+  display: flex;
 }
 
 #students-sec{
     margin: 0 4%;
 }
 
+#students-sec h2{
+  font-size: 2rem;
+}
 
 .students{
     display: flex;
     align-items: center;
     width: 70%;
-    margin: 7px 0 0 0 ;
     cursor: pointer;
 }
 
@@ -115,4 +126,18 @@ display: flex;
 .students a{
     text-decoration: none;
     color: #2a7ae2;
+}
+
+#students-div{
+  margin-top: 30px;
+}
+
+/* .students-content a{
+  margin-right:30px ;
+} */
+
+.student-data{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
 }
