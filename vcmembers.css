@@ -124,17 +124,23 @@ body {
 }
 
 .students a{
+  font-size: 1.1rem;
     text-decoration: none;
     color: #2a7ae2;
+    font-weight: 600;
 }
 
 #students-div{
   margin-top: 30px;
 }
 
-/* .students-content a{
-  margin-right:30px ;
-} */
+.student-head{
+  font-size: 1.2rem;
+}
+
+.student-head-head{
+  font-size: 1.7rem;
+} 
 
 .student-data{
   width: 50%;

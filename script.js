@@ -31,17 +31,39 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function typeText(target, text, index, interval) {
-    if (index < text.length) {
-        document.getElementById(target).innerHTML += text.charAt(index);
-        index++;
-        setTimeout(function () {
-            typeText(target, text, index, interval);
-        }, interval);
+    var element = document.getElementById(target);
+    if (element) {
+        if (index < text.length) {
+            element.innerHTML += text.charAt(index);
+            index++;
+            setTimeout(function () {
+                typeText(target, text, index, interval);
+            }, interval);
+        }
     }
 }
 
-// Call the function to type out the text
-typeText("labText", "Visual Computing Vertical", 0, 100);
+function typeTextLAB(target, text, index, interval) {
+    var element = document.getElementById(target);
+    if (element) {
+        if (index < text.length) {
+            element.innerHTML += text.charAt(index);
+            index++;
+            setTimeout(function () {
+                typeTextLAB(target, text, index, interval);
+            }, interval);
+        }
+    }
+}
+
+// Check if labText is present, then call the appropriate function
+if (document.getElementById("labText")) {
+    typeText("labText", "Visual Computing Vertical", 0, 100);
+} else {
+    typeTextLAB("labTextLAB", "Visual Computing Lab @TP 1505", 0, 100);
+}
+
+
 
 window.onscroll = function() {scrollFunction()};
 
@@ -270,94 +292,3 @@ function closeEnlargedPoster() {
     carousels.forEach(initCarousel);
 }(document));
 
-
-
-// // Params
-// let mainSliderSelector = '.main-slider',
-//     navSliderSelector = '.nav-slider',
-//     interleaveOffset = 0.5;
-
-// // Main Slider
-// let mainSliderOptions = {
-//       loop: true,
-//       speed:1000,
-//       autoplay:{
-//         delay:3000
-//       },
-//       loopAdditionalSlides: 10,
-//       grabCursor: true,
-//       watchSlidesProgress: true,
-//       navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev',
-//       },
-//       on: {
-//         init: function(){
-//           this.autoplay.stop();
-//         },
-//         imagesReady: function(){
-//           this.el.classList.remove('loading');
-//           this.autoplay.start();
-//         },
-//         slideChangeTransitionEnd: function(){
-//           let swiper = this,
-//               captions = swiper.el.querySelectorAll('.caption');
-//           for (let i = 0; i < captions.length; ++i) {
-//             captions[i].classList.remove('show');
-//           }
-//           swiper.slides[swiper.activeIndex].querySelector('.caption').classList.add('show');
-//         },
-//         progress: function(){
-//           let swiper = this;
-//           for (let i = 0; i < swiper.slides.length; i++) {
-//             let slideProgress = swiper.slides[i].progress,
-//                 innerOffset = swiper.width * interleaveOffset,
-//                 innerTranslate = slideProgress * innerOffset;
-           
-//             swiper.slides[i].querySelector(".slide-bgimg").style.transform =
-//               "translateX(" + innerTranslate + "px)";
-//           }
-//         },
-//         touchStart: function() {
-//           let swiper = this;
-//           for (let i = 0; i < swiper.slides.length; i++) {
-//             swiper.slides[i].style.transition = "";
-//           }
-//         },
-//         setTransition: function(speed) {
-//           let swiper = this;
-//           for (let i = 0; i < swiper.slides.length; i++) {
-//             swiper.slides[i].style.transition = speed + "ms";
-//             swiper.slides[i].querySelector(".slide-bgimg").style.transition =
-//               speed + "ms";
-//           }
-//         }
-//       }
-//     };
-// let mainSlider = new Swiper(mainSliderSelector, mainSliderOptions);
-
-// // Navigation Slider
-// let navSliderOptions = {
-//       loop: true,
-//       loopAdditionalSlides: 10,
-//       speed:1000,
-//       spaceBetween: 5,
-//       slidesPerView: 5,
-//       centeredSlides : true,
-//       touchRatio: 0.2,
-//       slideToClickedSlide: true,
-//       direction: 'vertical',
-//       on: {
-//         imagesReady: function(){
-//           this.el.classList.remove('loading');
-//         },
-//         click: function(){
-//           mainSlider.autoplay.stop();
-//         }
-//       }
-//     };
-// let navSlider = new Swiper(navSliderSelector, navSliderOptions);
-
-// // Matching sliders
-// mainSlider.controller.control = navSlider;
-// navSlider.controller.control = mainSlider;
