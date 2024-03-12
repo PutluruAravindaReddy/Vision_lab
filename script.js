@@ -60,7 +60,7 @@ function typeTextLAB(target, text, index, interval) {
 if (document.getElementById("labText")) {
     typeText("labText", "Visual Computing Vertical", 0, 100);
 } else {
-    typeTextLAB("labTextLAB", "Visual Computing Lab @TP 1505", 0, 100);
+    typeTextLAB("labTextLAB", "Visual Computing Lab @TP 1515", 0, 100);
 }
 
 

@@ -80,6 +80,7 @@ body {
 }
 
 .gallery-item {
+    cursor: pointer;
     margin: 10px;
     width: 30%;
     height: 330px;
