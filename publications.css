@@ -46,8 +46,8 @@ body {
 @media screen and (max-width: 440px) {
 
     #publications {
-        padding: 20px 30px 40px 40px;
-        margin: 0;
+        /* padding: 20px 30px 40px 40px; */
+        /* margin: 20px; */
     }
 
     #publications h3 {
@@ -60,12 +60,17 @@ body {
     }
 
     #publications ul {
-        padding-left: 10px;
+        /* padding-left: 10px; */
+    }
+
+    #publications ul li {
+        list-style: none;
     }
 
     .publications-content {
-        font-size: 1.2rem;
-        padding: 10px;
+        width: 90%;
+        font-size: 1rem;
+        /* padding: 0; */
         line-height: 1.3;
     }
 

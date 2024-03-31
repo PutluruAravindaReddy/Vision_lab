@@ -322,12 +322,26 @@ nav ul li a {
 }
 
 #copy-right p {
+    font-size: 15px;
     padding: 0 0 35px 0;
 }
 
 
 /* Additional styles for smaller screens */
 @media screen and (max-width: 800px) and (min-width:441px) {
+    .visual {
+        text-align: center;
+        display: block;
+    }
+
+    #intro{
+        margin: 30px 0 0 0;
+    }
+
+    #hero h2{
+        text-align: center;
+    }
+
     .sidebar i {
         font-size: 30px;
         padding-right: 20px;
@@ -367,9 +381,13 @@ nav ul li a {
 }
 
 @media screen and (max-width: 440px) {
+    #hero h2{
+        font-size: 37px;
+    }
+
     #bg::before{
-        background: url(./img/srm-auditorium_crop_half.jpg) center/cover;
-        height: calc(96vh);
+        background: url(./img/tech-park.jpeg) center/cover center bottom;
+        height: calc(93vh);
     }
 
     .sidebar i {
@@ -390,6 +408,14 @@ nav ul li a {
     .visual {
         text-align: center;
         display: block;
+    }
+
+    #intro{
+        margin: 30px 0 0 0;
+    }
+
+    #hero h2{
+        text-align: center;
     }
 
     .active ul {

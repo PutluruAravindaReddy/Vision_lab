@@ -49,6 +49,7 @@ transition: color 0.3s ease-in-out;
 
 
 .faculty-description{
+    text-align: justify;
     align-self: center;
     width: 100%;
 }
@@ -91,8 +92,8 @@ transition: color 0.3s ease-in-out;
     justify-content: flex-start;
     align-items: center;
     /* border: 1px solid black; */
-    padding: 10px;
-    margin:0 5% 4% 4%;
+    /* padding: 10px; */
+    margin:10px 0 5% 0;
     width: 42%;
     min-width: 330px;
     max-width: 400px;
@@ -142,6 +143,15 @@ transition: color 0.3s ease-in-out;
     
     .faculty-description{
         margin: 0 0 0 10px;
+    }
+
+    .faculty-description p{
+        padding: 4px 0;
+    }
+
+    .members-description p{
+        margin: 0 10px 0 0;
+        font-size: 12px;
     }
 
     #members-sec{
