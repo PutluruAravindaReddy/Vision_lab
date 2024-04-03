@@ -68,29 +68,37 @@ if (document.getElementById("labText")) {
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
+  var headerbg = document.getElementById("headerbg");
+  var activeElement = document.querySelector(".active");
+  var ddMenu = document.querySelector(".dd-menu");
+  var vcCssBorder = document.querySelector('.vc-css-border');
+
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("headerbg").classList.add("scroll");
-    document.querySelector(".active").classList.add("greenandwhite");
-    document.querySelector(".dd-menu").classList.add("dd-green");
-    // document.querySelector("header").classList.add("transparent-bg-nav");
-    document.querySelector('.vc-css-border').classList.add("vc-css-color-white");
+    headerbg.classList.add("scroll");
+    if (activeElement !== null) {
+      activeElement.classList.add("greenandwhite");
+    }
+    if (ddMenu !== null) {
+      ddMenu.classList.add("dd-green");
+    }
+    if (vcCssBorder !== null) {
+      vcCssBorder.classList.add("vc-css-color-white");
+    }
   }
-  else  if (document.body.scrollTop < 20 || document.documentElement.scrollTop < 20) {
-    document.getElementById("headerbg").classList.remove("scroll");
-    document.querySelector(".active").classList.remove("greenandwhite");
-    document.querySelector(".dd-menu").classList.remove("dd-green");
-    // document.querySelector("header").classList.remove("transparent-bg-nav");
-    document.querySelector('.vc-css-border').classList.remove("vc-css-color-white");
-
-
-  } else {
-    document.getElementById("headerbg").classList.remove("scroll");
-    document.querySelector(".active").classList.remove("greenandwhite");
-    document.querySelector(".dd-menu").classList.remove("dd-green");
-    // document.querySelector("header").classList.remove("transparent-bg-nav");
-    document.querySelector('.vc-css-border').classList.remove("vc-css-color-white");
+  else {
+    headerbg.classList.remove("scroll");
+    if (activeElement !== null) {
+      activeElement.classList.remove("greenandwhite");
+    }
+    if (ddMenu !== null) {
+      ddMenu.classList.remove("dd-green");
+    }
+    if (vcCssBorder !== null) {
+      vcCssBorder.classList.remove("vc-css-color-white");
+    }
   }
 }
+
 
 
 document.addEventListener('DOMContentLoaded', function () {

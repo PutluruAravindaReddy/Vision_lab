@@ -21,10 +21,12 @@ body {
     align-items: start;
     flex-direction: column;
     justify-content: center;
+    text-align: justify;
     margin: 0 40px;
 }
 
 #publications h3 {
+    text-align: justify;
     align-self: flex-start;
     color: #041e42;
     text-align: left;
@@ -45,9 +47,12 @@ body {
 
 @media screen and (max-width: 440px) {
 
+    .section-p1{
+        padding: 0;
+    }
     #publications {
         /* padding: 20px 30px 40px 40px; */
-        /* margin: 20px; */
+        margin: 0 20px 0 30px;
     }
 
     #publications h3 {
@@ -55,7 +60,7 @@ body {
         color: #041e42;
         text-align: left;
         padding-left: 7px;
-        font-size: 3rem;
+        font-size: 1.5rem;
         margin-left: -20px;
     }
 
@@ -68,10 +73,17 @@ body {
     }
 
     .publications-content {
-        width: 90%;
+        width: 94%;
         font-size: 1rem;
         /* padding: 0; */
         line-height: 1.3;
     }
 
+    .publications-content h4{
+        padding: 0 0 4px 0;
+    }
+
+    .publications-content  *{
+        padding: 3px 0 0 0 ;
+    }
 }
